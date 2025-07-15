@@ -59,7 +59,7 @@ export function SignUpForm({
         </div>
       ));
       //   router.push("/dashboard");
-      redirect("/signin");
+      redirect("/dashboard");
     }
   };
 

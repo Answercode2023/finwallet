@@ -19,10 +19,17 @@ export function SignInForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
+
+
+  
+
+
+
   const data: SignInFormProps = {
     email: "",
     password: "",
   };
+
   const [error, setError] = useState<string[] | undefined>([]);
 
   const handleLogin = async (formData: FormData) => {
@@ -53,8 +60,10 @@ export function SignInForm({
           <span className="text-sm">Login realizado com sucesso.</span>
         </div>
       ));
+
+      console.log("Dados do res:", res.user);
       //   router.push("/dashboard");
-      redirect("/signin");
+      redirect("/dashboard");
     }
   };
 

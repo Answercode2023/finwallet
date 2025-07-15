@@ -29,8 +29,7 @@ export async function signUpAction(params: signUpFormData) {
   }
 
   try {
-    console.log(params.email, params.password);
-    console.log(axios);
+    
 
     const LowerCaseEmail = params.email.toLowerCase();
 
